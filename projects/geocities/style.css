@@ -1,0 +1,136 @@
+
+body{
+    background-image: url(/projects/geocities/gifs/stars-bg.gif);
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: cornsilk;
+}
+
+h1{
+    font-family: fantasy;
+    font-size: 2em;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.stars{
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+}
+
+.text{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border: darkgoldenrod solid;
+    width: 60%;
+}
+
+.shooting-star{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 20em;
+    height: auto;
+}
+
+.cybertruck{
+    position: fixed;
+    right: 0px;
+    bottom: -110px;
+    top:auto;
+    width: 20em;
+    height: auto;
+    padding:10px;
+    z-index: 99;
+}
+
+.rocket-doge{
+    width: 50px;
+    position: absolute;
+    top: 240px;
+    right: 50px;
+    bottom: auto;
+    z-index: 1;
+}
+
+.moon{
+    width: 100px;
+    position: absolute;
+    top: 240px;
+    right: 50px;
+    z-index: 0;
+    bottom: auto;
+}
+
+.airplane{
+
+    width: 100px;
+    position: absolute;
+    bottom: 200px;
+    left: 50px;
+}
+
+.earth{
+    width: 100vw;
+    height: 80vh;
+    margin: 0px;
+    background-image: url(/projects/geocities/img/dirt.jpg);
+}
+
+.dirt-bike{
+    width: 300px;
+    margin: 10em;
+}
+
+.minecraft-grass{
+    width: 200px;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+.melted-rock{
+    width: 100vw;
+    height: 80vh;
+    background-image: url(/projects/geocities/gifs/magma.gif);
+}
+
+.rock-glasses{
+    position: relative;
+    left: 40px;
+    top: 20%;
+    width: 40px;
+    margin: 5px;
+}
+
+.kiss-concert{
+    position: relative;
+    left: 40px;
+    top: 100px;
+    width: 300px;
+}
+
+.rockNroll{
+    position: relative;
+    right: auto;
+    left: 50%;
+    top: 30%;
+}
+
+
+
+.bottom-fixed{
+    /* background-color: crimson;  - Use to check div */
+    position: fixed;
+    width: 100vw;
+    right: 0px;
+    bottom: 0px;
+    top:auto;
+    left: 0px;
+    background-repeat: repeat-x;
+    background-image: url(/projects/geocities/gifs/flowers.gif);
+    background-position: bottom;
+}

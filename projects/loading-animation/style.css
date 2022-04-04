@@ -1,0 +1,119 @@
+
+h1 {
+    font-family: cursive;
+    color:crimson;
+}
+.home-body{
+    padding: 2em;
+}
+a{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(219, 49, 49, 0.3);
+}
+
+.back-button{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgb(72, 157, 253);
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { 
+text-decoration: none;
+color: mediumblue;
+}
+p{
+    padding: 0px;
+    margin: 0px;
+}
+
+.bold-font{
+    color: slategray;
+    font-family:serif;
+    font-size: 2em;
+    padding-bottom: 2em;
+}
+
+/*Loading Animation, gradient rotating circle*/
+.loading-circle{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    top: 50%;
+    left: 50%;
+}
+.loading-circle::before,
+.loading-circle:after{
+    content: "";
+    position:absolute;
+    border-radius: inherit;
+}
+.loading-circle::before{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        0deg, #fff 20%, #ff3e3e 100%);
+    animation: spin 2s ease-in-out;
+    animation-iteration-count: 2;
+}
+.loading-circle:after{
+    width: 85%;
+    height: 85%;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@keyframes spin {
+    to {transform: rotate(360deg);}
+}
+@-moz-keyframes spin {
+    to { -moz-transform: rotateZ(360deg) }
+}
+@-webkit-keyframes spin {
+    to { -webkit-transform: rotateZ(360deg) }
+}
+
+.loaded{
+    position: absolute;
+    top: 60%;
+    left: 47%;
+    font-family: fantasy;
+    font-size: 2em;
+    color: rgb(21, 211, 154);
+    animation-delay: 3s;
+    animation: loaded 4s;
+}
+
+@keyframes loaded {
+    0% {opacity:0;}
+    90% {opacity:0;}
+    100% {opacity:1;}
+}
+
+/*Waiting Animation, Text fadiing in/out*/
+
+.fancy-font{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-family: fantasy;
+    font-size: 2em;
+    animation: showup 2s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    50% {opacity:1;}
+    100% {opacity:0;}
+}
+
